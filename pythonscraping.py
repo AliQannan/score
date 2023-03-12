@@ -51,7 +51,6 @@ file2=[all_AT,all_BT,reslut]
 zi=zip_longest(*file2)
 with open("reslut.csv","a") as myscond:
      wr=csv.writer(myscond)
-     wr.writerow("First team")
      wr.writerows(zi)
 
 print(reslut)
