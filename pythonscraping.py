@@ -9,7 +9,8 @@ score=[]
 reslut=[]
 ###/lists
 ## st1
-req=requests.get("https://www.yallakora.com/match-center")
+data=input("Enter day of match :Day/Month/Year :")
+req=requests.get(f"https://www.yallakora.com/match-center?data={data}")
 src=req.content
 
 soup=BeautifulSoup(src,"lxml")
